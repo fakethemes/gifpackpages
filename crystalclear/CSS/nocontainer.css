@@ -42,20 +42,6 @@
 
 .searchhold h2 {
     width:160px;
-}   
-
-.cats h2 {
-    width:300px;
-}  
-
-.pills h2 {
-    width:600px;
-}   
-
- .choose:after {
-  content:"";
-  display: block;
-  clear: both;
 }
 
 .searchhold {
