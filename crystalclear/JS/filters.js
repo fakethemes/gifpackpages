@@ -1,3 +1,15 @@
+     (function($){
+         $(document).ready(function(){
+             $("[title]").style_my_tooltips({ 
+    tip_follows_cursor:true,
+    tip_delay_time:300,
+    tip_fade_speed:300,
+    attribute:"title"
+});
+         });
+     })(jQuery);
+
+
 // store filter for each group
 var buttonFilters = {};
 var buttonFilter;
