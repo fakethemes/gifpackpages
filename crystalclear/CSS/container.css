@@ -224,11 +224,11 @@ input[type="text"] {
 }   
 
 .credit a {
-    color:var(--accent);
+    color:var(--second-txt-color);
 } 
 
 .credit a:hover {
-    color:#222;
+    color:var(--accent);
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -o-transition: all .3s;
