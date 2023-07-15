@@ -1,0 +1,237 @@
+#s-m-t-tooltip{
+  /* basic */
+  max-width:500px;
+  z-index:999999999;
+  padding:5px 10px 5px 10px;
+  background:#222;
+  font-family:'karla';
+  font-size:11px;
+  text-transform:uppercase;
+  color:#fff;
+  border:none;
+  box-shadow:none;
+  border-radius:20px;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: var(--accent); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: var(--accent);
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--accent2);
+}  
+
+.searchhold h2 {
+    width:160px;
+}
+
+.searchhold {
+    top:0px;
+    width:260px;
+    height:60px;
+    right:22px;
+    display:inline-block;
+    text-align:center;
+    position:absolute;
+    float:right;
+}
+
+.searchbar {
+    top:0px;
+    left:0px;
+    position: relative;
+    text-align:center;
+    padding-bottom:10px;
+    display:inline-block;
+}
+
+.quicksearch {
+      width:200px;
+
+}
+
+input[type="text"] {
+
+  font-size: 12px;
+  font-family:'karla';
+  border:1px solid var(--accent);
+  border-radius: 50px;
+  padding: 2px 23px 2px 10px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+.arms {
+    width: calc(var(--gif-width)*4 + var(--margins)*6);
+    height:70%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    text-align:center;
+    border-radius:10px;
+    top:60px;
+    padding-top:130px;
+    background-color:rgba(250,250,250,0.6);
+        backdrop-filter: blur(10px);
+    border:1px solid var(--border-color);    
+}
+
+
+.grid {
+    width: calc(var(--gif-width)*4 + var(--margins)*8);
+    margin: 0 auto;
+    overflow:scroll;
+    border:none;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position: absolute;
+    padding:var(--margins);
+    background-color:none;
+
+}
+
+
+.grid:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+/* Mobile  */
+@media only screen and (max-width: 1200px) {
+.arms {
+    width: 100%;
+    margin: 0 auto;
+    height: 76%;
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border:none;
+}    
+  .grid {
+    width: calc(var(--gif-width)*3 + var(--margins)*4);
+    margin:0 auto;
+    position: absolute;
+    height:auto;
+    overflow:hidden;
+    border:none;
+    background-color:none;
+    padding-top:100px;
+    padding-left:60px;
+    padding-bottom:50px;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+.arms {
+    width: 100%
+    margin: 0 auto;
+    height: 90%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}     
+    
+  .grid {
+    width: calc(var(--gif-width)*2 + var(--margins)*3);
+    margin:0 auto;
+    position: relative;
+    height:auto;
+    overflow:hidden;
+    border:none;
+    background-color:none;
+    padding-left:0px;
+    padding-bottom:50px;
+    margin-top:-180px;
+
+  }
+  
+.choose {
+      display:none;
+  } 
+
+
+}
+
+@media only screen and (max-width: 480px) {
+.arms {
+    width: 100%;
+    margin: 0 auto;
+    height: 80%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}     
+    
+  .grid {
+    width: var(--gif-width);
+    margin:0 auto;
+    position: relative;
+    height:60%;
+    border:none;
+    background-color:none;
+    top:-200px;
+  }
+  
+  .choose {
+      display:none;
+  }
+  
+  
+}
+
+/* dont u do it */
+.credit {
+    font-size:16px;
+    bottom:1%;
+    right:1%;
+    position:fixed;
+    z-index:111;
+}   
+
+.credit a {
+    color:var(--accent);
+} 
+
+.credit a:hover {
+    color:#222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;    
+    transition: all .3s;
+}  
