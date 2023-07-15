@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+
+          crystal clear / simplified (gif pack directory) by fakehelper
+ 
+                    credits
+                    - google fonts (karla)
+                    - phosphor icon font
+                    - tumblr controls by cyantists
+                    
+                search ":root" to change theme colors!!  
+                
+            to change icons, use https://phosphoricons.com/
+            
+
+-->
+
+
+
+
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+
+<link href="https://static.tumblr.com/51fnf0s/BCoprzst5/style-my-tooltips.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/51fnf0s/lKGprzsse/jquery.style-my-tooltips.js"></script>
+<script>
+     (function($){
+         $(document).ready(function(){
+             $("[title]").style_my_tooltips({ 
+    tip_follows_cursor:true,
+    tip_delay_time:300,
+    tip_fade_speed:300,
+    attribute:"title"
+});
+         });
+     })(jQuery);
+ </script>
+
+<!--- fonts --->
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<!-- css --->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fakethemes/gifpackpages@main/crystalclear/CSS/simple.css">
+
+
+<style type="text/css">
+
+
+
+                        /* CHANGE THEME COLORS HERE */                        
+
+:root {
+                        --main-txt-color: #333;
+                        --second-txt-color: #fff; 
+                        --border-color: #e6d9c7;
+                        --accent: #9bc7a5;
+                        --accent2: #f3ece2;
+                        --solid-bg-color:#fefaf7;
+                        --card-bg:rgba(255,255,255, 0.3);
+                        --margins:20px;
+                        
+                    /* change your gif size here */        
+                        --gif-width:245px;
+                        --gif-height:160px;
+                        
+                    /* change your icon size here */        
+                        --icon-width:100px;
+                        --icon-height:100px;
+                        
+                        --icon-width2:80px;
+                        --icon-height2:80px;
+                        
+            /* if using gradient bg, change colors here */
+                 
+                        --gradient-colors:#c6e5f5,#bbb1e0;                        
+}
+
+/* tumblr controls by cyantists */
+iframe.tmblr-iframe {
+    z-index:99999999999999!important;
+    top:0!important;
+    right:0!important;
+    opacity:0.4;
+    /* delete invert(1) from here */
+        filter:invert(1) contrast(150%);
+        -webkit-filter:invert(1) contrast(150%);
+        -o-filter:invert(1) contrast(150%);
+        -moz-filter:invert(1) contrast(150%);
+        -ms-filter:invert(1) contrast(150%);
+    /* to here if your blog has a dark background */
+    transform:scale(0.65);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.65);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.65);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.65);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.65);
+    -ms-transform-origin:100% 0;
+    margin-top:12px;
+}
+
+iframe.tmblr-iframe:hover {
+    opacity:0.6!important;}
+    
+    
+html, body {
+    margin: 0;
+    padding: 0;
+    color: var(--main-txt-color);
+    overflow:hidden;
+    overflow-x: hidden;
+    width:100%;
+}    
+    
+#background{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%; 
+    height:100%;
+    z-index:-9999; 
+    overflow:none;
+    background-color:var(--solid-bg-color);
+/*
+    background: -webkit-linear-gradient(var(--gradient-colors));
+    background: -o-linear-gradient(var(--gradient-colors));
+    background: -moz-linear-gradient(var(--gradient-colors));
+    background: linear-gradient(var(--gradient-colors)); 
+    background-position: top center;
+    background-repeat:repeat-x;
+    background-size:cover; */
+}      
+    
+a, b {
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:bold;
+}
+    
+h1 {
+    color:var(--accent);
+    font-family: 'Karla', serif;
+    margin-top:20px;
+    font-weight: 800;
+    font-size:20px;
+    text-transform:uppercase;
+    text-align:center;
+    padding:none;
+} 
+
+h2 {
+    position: relative;
+    color:var(--main-txt-color);
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    font-size:13px;
+    line-height:20px;
+    display:inline-block;
+    text-transform:uppercase;
+    text-align:center;
+}  
+
+.button {
+    padding:none;
+    border:none;
+}
+
+.choose {
+    position:absolute;
+    display:block;
+    width:860px;
+    height:47px;
+    margin:0 auto;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    margin-top:20px;
+    overflow:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.03); 
+    background-color:rgba(250,250,250,0.6);
+        backdrop-filter: blur(10px);
+    border:1px solid var(--border-color);
+    padding:20px;
+    z-index:99;
+}
+
+.searchhold h2 {
+    width:160px;
+}   
+
+.cats h2 {
+    width:300px;
+}  
+
+ .choose:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.choose-left {
+    left:0;
+    width:260px;
+    float:left;
+    height:150px;
+    margin-top:-20px;
+}
+
+.choose-right {
+    left:0;
+    margin-top:-10px;
+    width:600px;
+    height:150px;
+    display:inline-block;
+}
+
+.divide {
+    top:0px;
+    left:260px;
+    width:1px;
+    height:87px;
+    position:absolute;
+    background-color:var(--border-color);
+    padding:none;
+}
+
+.divide2 {
+    top:0px;
+    right:304px;
+    width:1px;
+    height:87px;
+    position:absolute;
+    background-color:var(--border-color);
+    padding:none;
+}
+
+.title {
+    margin-top:-28px;
+    margin-left:-20px;
+    width:260px;
+    position:fixed;
+}
+
+.navigation {
+    left:0;
+    top:44px;
+    position:fixed;
+    width:250px;
+    height:20px;
+    text-align:center;
+    border-top:1px solid var(--border-color);
+    padding-right:10px;
+}
+ 
+.navigation a {
+    margin-left:-1px;    
+    padding-top:10px;
+    padding-left:8px;
+    padding-right:4px;
+    width:20px;
+    height:27.5px;
+    font-size:22px;
+    text-align:center;
+    color:var(--main-txt-color);
+    display:inline-block;
+}
+
+.navigation a:hover {
+    color:var(--accent);
+}
+
+/*      PILL SHAPED FILTERS       */
+
+.pills {
+    height:82px;
+    width:600px;
+    position:relative;
+    padding:0;
+    display:inline-block;
+    margin-top:-6px;
+}
+
+.pills h2 {
+    width:600px;
+}
+
+.pills .button-group {
+    text-align:center;
+    padding:0;
+    width:600px;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    margin-top:-8px;
+}
+
+.pills .filter .button {
+    height:20px;
+    min-width:100px;
+    color:var(--second-txt-color);
+    font-family:'karla';
+    font-style:400;
+    font-weight:600;
+    font-size:12px;
+    line-height:10px;
+    text-transform:uppercase;
+    padding:10px 20px 20px 20px;
+    text-align:center;
+    background-color:var(--button-color);
+    border:1px solid var(--border-color);
+    border-radius:20px;
+}
+
+.pills .filter .selected {
+    color:var(--button-color);
+    background-color:var(--accent);
+    border:1px solid var(--accent);
+}
+
+
+.pills .filter li {
+    list-style-type:none;
+    display: inline;
+    line-height:40px;
+    
+}
+
+.pills .filter ul {
+    margin-left:-180px;
+    float:left;
+    list-style-position: outside;
+}
+
+/*      CATEGORY FILTERS       */
+
+.cats {
+    position:relative;
+    margin-top:-10px;
+    height:95px;
+    overflow:none;
+    padding:none;
+    width:300px;
+}
+
+.cats .button-group {
+    position:relative;
+    width:300px;
+    height:45px;
+    display:inline-block;
+    text-align:center;
+    margin-left:-70px;
+    margin-top:-10px;
+    
+}
+
+.cats .filter .button {
+    width:34px;
+    height:34px;
+    position:absolute;
+    background-color:var(--accent2);
+    border-radius:20px;
+    padding:0px;
+    
+}
+
+.cats .filter .selected {
+    background-color:var(--accent);
+    
+}
+
+.cats .filter .selected i {
+    color:var(--second-txt-color);
+    
+}
+
+
+.cats .filter i {
+    color:var(--main-txt-color);
+    font-size:20px;
+    padding:14px 0px 6px 0px;
+    text-align:center;
+}
+
+.cats .filter li {
+    padding: 6px;
+    position:relative;
+    margin-left:26px;
+    margin-bottom:24px;
+    display: inline-block;
+}
+
+.cats .filter ul {
+    left:0;
+    padding:0;
+}
+
+                                /* CARD STYLING */
+
+.item {
+    width:var(--gif-width);
+    height:calc(var(--gif-height) + 146px);
+    border-radius:5px;
+    border:1px solid var(--border-color);
+    float:left;
+    margin: calc(var(--margins) / 2);
+    z-index:1;
+    background-color:var(--card-bg);
+}
+
+/* card image styles */
+.item img {
+    padding:none;
+}
+
+.gif {
+    width:var(--gif-width);
+    height:var(--gif-height);
+    
+}
+
+.gif img {
+    margin-top:0px;
+    height:auto;
+    border-radius:5px 5px 0px 0px;
+    padding-bottom:0px;
+    border-bottom:1px solid var(--border-color);
+    
+}
+
+.icon {
+    width:var(--gif-width);
+    height:var(--gif-height);
+    padding:none;
+    margin:0 auto;
+        backdrop-filter: blur(2px);
+    background-color:rgba(250,250,250,0.1);
+    backdrop-filter: blur(30px);
+    border-radius:5px 5px 0px 0px;
+}
+
+.icon img {
+    display:inline-block;
+    --padd:calc(var(--gif-height) - var(--icon-height));
+    border-radius:5px;
+    margin:calc(var(--margins)/4);
+    margin-top:calc(var(--padd)/2);
+    
+}
+
+/* icon 2 */
+
+.icon2 {
+    width:var(--gif-width);
+    height:var(--gif-height);
+    padding:none;
+    margin:0 auto;
+        backdrop-filter: blur(2px);
+    background-color:rgba(250,250,250,0.1);
+    backdrop-filter: blur(30px);
+    border-radius:5px 5px 0px 0px;
+}
+
+.icon2 img {
+    display:inline-block;
+    --padd:calc(var(--gif-height) - var(--icon-height2));
+    border-radius:5px;
+    margin:calc(var(--margins)/4);
+    margin-top:calc(var(--padd)/2);
+    
+}
+
+/* fc name */
+.name h1{
+    margin-top:10px;
+    color:var(--accent);
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    font-size:16px;
+    text-transform:none;
+    text-align:center;
+    font-style:normal;
+    text-transform:uppercase;
+}
+
+.name {
+    width:100%;
+    height:40px;
+    display:inline-block;
+    border-top:1px solid var(--border-color);
+    border-bottom:1px solid var(--border-color);
+}
+
+
+/* footage */
+
+.info {
+    color:var(--main-txt-color);
+    width:calc(var(--gif-width) - 20px );
+    font-family:'karla';
+    font-size:11px;
+    margin:0 auto;
+    padding:0px 10px;
+    text-transform: uppercase;
+    font-weight:bold;
+    display:inline-block;
+    height:44px;
+    line-height:44px;
+    border-bottom:1px solid var(--border-color);
+    
+} 
+
+.info p {
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* links */
+.clickies {
+    width:var(--gif-width);
+    margin-top:12px;
+    position:absolute;
+    text-align:center;
+    border-radius:5px;
+    padding-bottom:20px;
+    padding-top:8px;
+}
+
+ 
+.clickies a {
+    padding:8px 8px;
+    font-size:20px;
+    text-align:center;
+    color:var(--main-txt-color);
+    background-color:var(--accent2);
+    border-radius:22px;
+    margin:8px;
+    margin-top:12px;
+    
+}
+
+.clickies a:hover{
+color:var(--second-txt-color);
+background-color:var(--accent);
+-webkit-transition: all .7s ease;
+-moz-transition: all .7s  ease;
+-o-transition: all .7s  ease;
+transition: all .7s  ease;
+}
+
+
+                            /* TRIGGER WARNINGS */
+
+/* tw banner on bottom of image */
+
+.banner {
+    width:calc(var(--gif-width) - 4px);
+    height:10px;
+    position:absolute;
+    font-family: 'Karla', sans-serif;
+    color:var(--main-txt-color);
+    padding:8px 0px 8px 4px;
+    margin-top:calc(var(--gif-height) - 26px);
+    font-size:11px;
+    text-transform: uppercase;
+    font-weight:bold;
+    z-index:999;
+    background-color:rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+}
+
+.banner:before {
+    content:"!";
+    font-family:'Karla', sans-serif;
+    font-size:14px;
+    color:var(--main-txt-color);
+    margin-top:-2px;
+    margin-left:-10px;
+    font-weight:800;
+    position:absolute;
+}
+
+/* tw on hover */
+.twi {
+    width:var(--gif-width);
+    height:var(--gif-height);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: opacity 1.0s ease-in-out, transform 2s ease-in-out;
+    border-radius:5px 5px 0px 0px;
+    background-color:var(--accent2);
+    border-bottom:1px solid var(--accent);
+    z-index:99999;
+    opacity: 0;
+}
+
+.twi h3 {
+    width:var(--gif-width);
+    color:var(--accent);
+    font-family:"Karla";
+    font-size:16px;
+    text-align: center;
+    margin-top:30px;
+    text-transform:uppercase;
+}
+
+.twi p {
+    width:calc(var(--gif-width) - 20px );
+    height:calc(var(--gif-height) - 30px );
+    overflow:none;
+    color:var(--main-txt-color);
+    font-family:"Karla";
+    font-size:13px;
+    text-align: center;
+    padding:none;
+    margin-top:-10px;
+    text-transform:none;
+    font-weight:normal;
+}
+
+.twi:hover {
+    content:'\eb6a';
+    font-family:'cappuccicons';
+    opacity: 1;
+    transition: opacity 1.0s ease-in-out, transform 2s ease-in-out;
+    
+}
+
+.extrainfo {
+    width:100%;
+    height:38px;
+    border-bottom:1px solid var(--border-color);
+    color:var(--accent-color);
+    font-family:'karla';
+    font-weight:600;
+    font-size:11px;
+    text-transform:uppercase;
+    margin-top:0px;
+    text-align:center;
+}
+
+.status {
+    width:65%;
+    margin-left:0px;
+    padding:13px 2px;
+    float:left;
+    border-right:1px solid var(--border-color);
+}
+
+.count {
+    width:calc(28% - 4px);
+    margin-right:0px;
+    padding:13px 8px 13px 8px;
+    float:right;
+}
+    
+</style>
+</head>
+<body><div id="background"></div>
+<div class="choose">
+<div class="divide"></div><div class="divide2"></div>
+<div class="title">
+                     <!-- CHANGE YOUR TITLE HERE -->    
+                        <h1>Gif Pack Directory</h1>
+</div>
+<div class="choose-left">
+                     <!-- CHANGE YOUR LINKS HERE -->   
+<div class="navigation">
+<a href="/" class="ph ph-house" title="Back to yoururl"></a>
+<a href="/" class="ph ph-warning" title="Rules"></a>
+<a href="#" class="ph ph-lock-key-open" title="Request Server Access"></a>
+<a href="#" class="ph ph-shopping-cart" title="Commission Info"></a>
+<a href="#" class="ph ph-coffee" title="Ko-Fi"></a>
+</div>
+</div>
+
+
+
+<div class="choose-right">
+ <div class="cats filters">
+<!---                       edit filters here !!
+ 
+ basically, just put a . in front of the filter and then make sure to include that in the div class below! For example, for completed packs, the filter here would be .c and in the card you would put like <div class="item c"> 
+ 
+ for in progress you could do .ip and then <div class="item ip"> 
+ 
+ if you have multiple filters, you can do <div class="item c poc nb"> for a completed pack with a nonbinary person of color. get it? if not, shoot me an ask! 
+ 
+ 
+ 
+ --->
+                            <h2>Search by Status</h2>
+<ul class="filter button-group exclusive" data-filter-group="group2">
+    <div class="category">
+<li><button class="button filter selected" data-filter=""><i class="ph ph-arrow-clockwise" title="All"></i></button></li>
+
+<li><button class="button filter" data-filter=".a"><i class="ph ph-check" title="Completed"></i></button></li>
+
+<li><button class="button filter" data-filter=".b"><i class="ph ph-spinner-gap" title="In Progress"></i></button></li>
+
+<li><button class="button filter" data-filter=".c"><i class="ph ph-lock-open" title="Free Packs"></i></button></li>
+
+<li><button class="button filter" data-filter=".d"><i class="ph ph-lock" title="Premium Packs"></i></button></li>
+
+<li><button class="button filter" data-filter=".e"><i class="ph ph-folder-notch-plus" title="Multi-Project Packs"></i></button></li>
+
+<!--- if you're already using icon packs, it already has a class you can use as a filter! so just leave it as .icons -->
+
+<li><button class="button filter" data-filter=".icons"><i class="ph ph-squares-four" title="Icon Packs"></i></button></li>
+      
+   </div>
+    </ul>
+</div>
+<!--- leave this alone tho lol -->
+<div class="searchhold"><h2>Search by Keyword</h2><div class="searchbar">
+<input type="text" class="quicksearch" placeholder="Search Gif Packs" /></div></div></div></div><div class="arms"><div class="grid"><center>
+
+
+
+                        <!-- ADD YOUR PACKS HERE -->
+
+<!--- START GIF PACK ----->
+
+<div class="item b d free"> <!--- add your filters after item ----->
+                         <!--- add content warnings here ----->
+<p class="banner">Content Warnings on Hover</p>
+<div class="twi">
+    <h3>Trigger Warnings:</h3>
+    <p>trigger one, two, three, four<br>
+        five, six, seven, eight,
+    </p>
+</div>
+                     <!--- end content warnings ----->
+<div class="gif"><!--- add gif link here ----->
+<img src="https://placehold.co/245x160"></div>
+<div class="name"><h1>Faceclaim Name</h1></div>
+<div class="info"><p>Project Name</p></div>
+
+<!--- extra details, if you want to delete this, change .item height to
+                 height:calc(var(--gif-height) + 156px);  ----->
+<!-- end extra details -->
+
+<!--- links or hovers start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-lock" title="title"></a>
+    <a class="ph ph-check" title="title two"></a>
+    <a class="ph ph-arrow-clockwise" href="/tagged/fc" title="link title"></a>
+<!--<a class="ph ph-warning" title="a secret fourth option"></a>-->
+</div>
+</div>
+<!--- FINISH GIF PACK ----->  
+
+
+<!--- START GIF PACK ----->
+
+<div class="item a c e one three"> <!--- add your filters after item ----->
+                         <!--- add content warnings here -----
+<p class="banner">Content Warnings on Hover</p>
+<div class="twi">
+    <h3>Trigger Warnings:</h3>
+    <p>trigger one, two, three, four<br>
+        five, six, seven, eight,
+    </p>
+</div>
+                     <!--- end content warnings ----->
+<div class="gif"><!--- add gif link here ----->
+<img src="https://placehold.co/245x160"></div>
+<div class="name"><h1>Faceclaim Name</h1></div>
+
+<!--- extra details, if you want to delete this, change .item height to
+                 height:calc(var(--gif-height) + 156px);  ----->
+<!-- end extra details -->
+
+<div class="info"><p>Project Name</p></div>
+
+<!--- links or hovers start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-lock" title="title"></a>
+    <a class="ph ph-check" title="title two"></a>
+    <a class="ph ph-arrow-clockwise" href="/tagged/fc" title="link title"></a>
+<!--<a class="ph ph-warning" href="#" title="a secret fourth option"></a>-->
+</div>
+</div>
+<!--- FINISH GIF PACK ----->     
+
+
+<!--- START GIF ICON PACK ----->
+
+<div class="item icons b d e three five"><!--- add your filters after item and icons ----->
+                    <!--- add content warnings here -----
+<p class="banner">Content Warnings on Hover</p>
+<div class="twi">
+    <h3>Trigger Warnings:</h3>
+    <p>trigger one, two, three, four<br>
+        five, six, seven, eight,
+    </p>
+</div>
+                     <!--- end content warnings ----->
+<div class="icon"><!--- add gif icon links here ----->
+<img src="https://placehold.co/100x100">
+<img src="https://placehold.co/100x100">
+</div>
+<div class="name"><h1>Faceclaim Name</h1></div>
+<div class="info"><p>Project Name</p></div>
+
+<!--- extra details, if you want to delete this, change .item height to
+                 height:calc(var(--gif-height) + 156px);  ----->
+
+<!--- links or hovers start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-lock" title="title"></a>
+    <a class="ph ph-check" title="title two"></a>
+    <a class="ph ph-arrow-clockwise" href="/tagged/fc" title="link title"></a>
+<!--<a class="ph ph-warning" title="a secret fourth option"></a>-->
+</div>
+</div>
+
+<!--- FINISH GIF ICON PACK ----->
+
+
+<!--- START GIF ICON PACK ----->
+
+<div class="item icons b two four"><!--- add your filters after item and icons ----->
+                    <!--- add content warnings here ----->
+<p class="banner">Content Warnings on Hover</p>
+<div class="twi">
+    <h3>Trigger Warnings:</h3>
+    <p>trigger one, two, three, four<br>
+        five, six, seven, eight,
+    </p>
+</div>
+                     <!--- end content warnings ----->
+<div class="icon"><!--- add gif icon links here ----->
+<img src="https://placehold.co/100x100">
+<img src="https://placehold.co/100x100">
+</div>
+<div class="name"><h1>Faceclaim Name</h1></div>
+<!--- extra details, if you want to delete this, change .item height to
+                 height:calc(var(--gif-height) + 156px);  ----->
+<div class="info"><p>Project Name</p></div>
+
+<!--- links or hovers start here, if you dont want it to be a link just remove the href="" part ----->
+<div class="clickies">
+    <a class="ph ph-lock" title="title"></a>
+    <a class="ph ph-check" title="title two"></a>
+    <a class="ph ph-arrow-clockwise" href="/tagged/fc" title="link title"></a>
+<!--<a class="ph ph-warning" title="a secret fourth option"></a>-->
+</div>
+</div>
+
+<!--- FINISH GIF ICON PACK ----->
+
+
+           <!--- don't need any comments? these are for you ----->
+           
+           
+
+<!--- START GIF ICON PACK ----->
+
+<div class="item icons b d e three five">
+<div class="icon">
+<img src="https://placehold.co/100x100">
+<img src="https://placehold.co/100x100">
+</div>
+<div class="name"><h1>Faceclaim Name</h1></div>
+<div class="info"><p>Project Name</p></div>
+<div class="clickies">
+    <a class="ph ph-lock" title="title"></a>
+    <a class="ph ph-check" title="title two"></a>
+    <a class="ph ph-arrow-clockwise" href="/tagged/fc" title="link title"></a>
+</div>
+</div>
+
+<!--- FINISH GIF ICON PACK ----->
+
+
+<!--- START GIF ICON PACK ----->
+
+<div class="item icons b two four">
+<p class="banner">Content Warnings on Hover</p>
+<div class="twi">
+    <h3>Trigger Warnings:</h3>
+    <p>trigger one, two, three, four<br>
+        five, six, seven, eight,
+    </p>
+</div>
+<div class="icon">
+<img src="https://placehold.co/100x100">
+<img src="https://placehold.co/100x100">
+</div>
+<div class="name"><h1>Faceclaim Name</h1></div>
+<div class="info"><p>Project Name</p></div>
+
+<div class="clickies">
+    <a class="ph ph-lock" title="title"></a>
+    <a class="ph ph-check" title="title two"></a>
+    <a class="ph ph-arrow-clockwise" href="/tagged/fc" title="link title"></a>
+<a class="ph ph-warning" title="a secret fourth option"></a>
+</div>
+</div>
+
+<!--- FINISH GIF ICON PACK ----->           
+
+
+<!--- START GIF PACK ----->
+
+<div class="item b d free">
+<p class="banner">Content Warnings on Hover</p>
+<div class="twi">
+    <h3>Trigger Warnings:</h3>
+    <p>trigger one, two, three, four<br>
+        five, six, seven, eight,
+    </p>
+</div>
+<div class="gif">
+<img src="https://placehold.co/245x160"></div>
+<div class="name"><h1>Faceclaim Name</h1></div>
+<div class="info"><p>Project Name</p></div>
+<div class="clickies">
+    <a class="ph ph-lock" title="title"></a>
+    <a class="ph ph-check" title="title two"></a>
+    <a class="ph ph-arrow-clockwise" href="/tagged/fc" title="link title"></a>
+    <a class="ph ph-warning" title="a secret fourth option"></a>
+</div>
+</div>
+
+<!--- FINISH GIF PACK ----->  
+
+
+<!--- START GIF PACK ----->
+
+<div class="item a c e one three">
+<div class="gif">
+<img src="https://placehold.co/245x160"></div>
+<div class="name"><h1>Faceclaim Name</h1></div>
+<div class="info"><p>Project Name</p></div>
+<div class="clickies">
+    <a class="ph ph-lock" title="title"></a>
+    <a class="ph ph-check" title="title two"></a>
+    <a class="ph ph-arrow-clockwise" href="/tagged/fc" title="link title"></a>
+    <a class="ph ph-warning" href="#" title="a secret fourth option"></a>
+</div>
+</div>
+<!--- FINISH GIF PACK ----->     
+
+
+
+
+
+
+                        <!-- END YOUR PACKS HERE -->
+
+
+<!--- END ALL GIF PACKS HERE!!! --->
+
+
+<!--- isotope filtering  ----->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fakethemes/gifpackpages@main/crystalclear/JS/filters.js"></script>
+
+</center></div> <!--end grid ---></div></body></html>
