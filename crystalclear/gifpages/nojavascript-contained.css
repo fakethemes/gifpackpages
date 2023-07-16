@@ -75,7 +75,7 @@ input[type="text"] {
   font-weight:700;
   font-size:10px;
   text-transform:uppercase;
-  color: var(--accent);
+  color: var(--main-txt-color);
   background-color:var(--second-txt-color);
   text-align:center;
   visibility: hidden;
