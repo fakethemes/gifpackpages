@@ -139,7 +139,7 @@ input[type="text"] {
   border-color: transparent transparent transparent var(--accent);
 }
 
-/* no container */
+/* container */
 #trunk {
     width:calc(80% - 40px);
     height:77%;
