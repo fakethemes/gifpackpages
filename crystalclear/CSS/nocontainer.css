@@ -37,7 +37,7 @@
 
 ::selection {
   color: #fff;
-  background-color: var(--accent2);
+  background-color: var(--accent);
 }  
 
 .searchhold h2 {
