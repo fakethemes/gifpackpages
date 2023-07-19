@@ -355,3 +355,13 @@ svg:hover {
   }  
   
 }
+
+/* pls dont */
+.credit {
+    padding-top:4px;
+    bottom:1%;
+    right:1.5%;
+    position:fixed;
+    z-index:111;
+    font-style: normal;
+} 
