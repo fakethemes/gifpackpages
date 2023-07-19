@@ -1,0 +1,369 @@
+/* tumblr controls by cyantists */
+iframe.tmblr-iframe {
+    z-index:99999999999999!important;
+    top:0!important;
+    right:0!important;
+    opacity:0.8;
+        filter:invert(1) contrast(150%);
+        -webkit-filter:invert(1) contrast(150%);
+        -o-filter:invert(1) contrast(150%);
+        -moz-filter:invert(1) contrast(150%);
+        -ms-filter:invert(1) contrast(150%);
+    transform:scale(0.65);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.65);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.65);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.65);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.65);
+    -ms-transform-origin:100% 0;}
+
+iframe.tmblr-iframe:hover {
+    opacity:0.4!important;}
+
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+
+::-webkit-scrollbar-track {
+width: 2px;
+border: none;
+background-color:none;
+border:1px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--accent); 
+border:1px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--accent2);  
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--accent2);
+} 
+
+/* tooltiiiiips */
+
+/* filter tooltip*/
+
+.tooltipfilter {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipfilter .tooltiptextfilter {
+  font-family:'karla';
+  font-weight:700;
+  font-size:10px;
+  text-transform:uppercase;
+  color: var(--main-txt-color);
+  background-color:var(--second-txt-color);
+  text-align:center;
+  visibility: hidden;
+  height:10px;
+  border-radius: 30px;
+  top: 0%;
+  left:120%;
+  opacity: 0;
+  transition: opacity 1s;
+  padding-bottom:10px;
+  border:1px solid var(--border-color);
+  z-index:9999999;
+}
+
+.tooltiptextfilter {
+  width: max-content; 
+  max-width: 200px;
+  position: absolute;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.tooltipfilter:hover .tooltiptextfilter {
+  visibility: visible;
+  opacity: 1;
+  
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-family:'karla';
+  font-weight:700;
+  font-size:10px;
+  text-transform:uppercase;
+  color: var(--main-txt-color);
+  background-color:var(--second-txt-color);
+  text-align:center;
+  visibility: hidden;
+  height:10px;
+  border-radius: 30px;
+  top: -10px;
+  right: 350%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+  padding-bottom:10px;
+  border:1px solid var(--border-color);
+}
+
+.tooltiptext {
+  width: max-content; 
+  max-width: 200px;
+  position: absolute;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* credit tooltip*/
+.tooltipcred .tooltiptextcred {
+  width: 160px;
+  top: 0px;
+  right: 145%;    
+  font-family:'karla';
+  font-size:12px;
+  color:var(--second-txt-color);
+  text-align:center;
+  background-color: var(--accent);
+  visibility: hidden;
+  border-radius: 6px;
+  padding: 5px 0px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-weight:600;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipcred:hover .tooltiptextcred {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltipcred .tooltiptextcred::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--accent);
+}
+
+svg {
+  fill:var(--accent); 
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;    
+    transition: all .3s;
+}   
+
+svg:hover {
+  fill:var(--accent2);
+      -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;    
+    transition: all .3s;
+}
+
+.line {
+    left:0;
+    top:92px;
+    position:fixed;
+    width:100%;
+    height:8px;
+    padding:none;
+    border-bottom:1px solid var(--border-color);
+    border-top:1px solid var(--border-color);
+    background: -webkit-linear-gradient(160deg, var(--gradient-colors));
+    background: -o-linear-gradient(160deg, var(--gradient-colors));
+    background: -moz-linear-gradient(160deg, var(--gradient-colors));
+    background: linear-gradient(160deg, var(--gradient-colors));
+    z-index:99999;
+}
+
+/* grid */
+.arms {
+    width: 100%;
+    height: 84%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align:center;
+    border-radius:10px;
+    padding-bottom:20px;
+    top:98px;
+    padding-top:20px;
+    scroll-behavior:smooth;
+}
+
+
+.grid {
+    width: calc(var(--gif-width)*4 + var(--margins)*6);
+    height: auto;
+    margin: 0 auto;
+    border:none;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0px;
+    bottom:0;
+    padding:var(--margins);
+    padding-left:calc(var(--margins)*3);
+    padding-bottom:20px; 
+
+}
+
+
+.grid:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+/* Mobile  */
+@media only screen and (max-width: 1200px) {
+.arms {
+    width: 100%
+    margin: 0 auto;
+    height: 88%;
+    position: absolute;
+    top: 98px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+
+}    
+  .grid {
+    width: calc(var(--gif-width)*3 + var(--margins)*4);
+    margin:0 auto;
+    position: relative;
+    height:auto;
+    overflow:hidden;
+    border:none;
+    background-color:none;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding-bottom:30px;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+.arms {
+    width: 100%
+    height: 90%;
+    position: absolute;
+    margin: 0 auto;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}     
+    
+  .grid {
+    width: calc(var(--gif-width)*2 + var(--margins)*3);
+    height:100%;
+    margin:0 auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding-bottom:50px;
+  }
+  
+.header {
+      display:none;
+  } 
+  
+.line {
+      display:none;
+  } 
+  
+ #background {
+      top:0;
+      left:0
+      height:100%;
+  }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+.arms {
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left:0;
+    padding-top:20px;
+}     
+    
+  .grid {
+    width: var(--gif-width);
+    height:80%;
+    margin:0 auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position: relative;
+    border:none;
+  }
+  
+  .header {
+      display:none;
+  }
+  
+ .line {
+      display:none;
+  }  
+  
+ #background {
+      top:0;
+      left:0
+      height:100%;
+  }
+  
+}
+
+/* pls dont */
+.credit {
+    padding-top:4px;
+    bottom:1%;
+    right:1.5%;
+    position:fixed;
+    z-index:111;
+    font-style: normal;
+} 
