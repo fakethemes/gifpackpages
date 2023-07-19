@@ -91,6 +91,47 @@ background: var(--accent2);
   opacity: 1;
 }
 
+/* filter tooltip*/
+
+.tooltipfilter {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipfilter .tooltiptextfilter {
+  font-family:'karla';
+  font-weight:700;
+  font-size:10px;
+  text-transform:uppercase;
+  color: var(--main-txt-color);
+  background-color:var(--second-txt-color);
+  text-align:center;
+  visibility: hidden;
+  height:10px;
+  border-radius: 30px;
+  top: 0%;
+  left:120%;
+  opacity: 0;
+  transition: opacity 1s;
+  padding-bottom:10px;
+  border:1px solid var(--border-color);
+  z-index:9999999;
+}
+
+.tooltiptextfilter {
+  width: max-content; 
+  max-width: 200px;
+  position: absolute;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.tooltipfilter:hover .tooltiptextfilter {
+  visibility: visible;
+  opacity: 1;
+  
+}
+
 /* credit tooltip*/
 .tooltipcred .tooltiptextcred {
   width: 160px;
@@ -179,6 +220,7 @@ svg:hover {
     padding-bottom:20px;
     top:98px;
     padding-top:20px;
+    scroll-behavior:smooth;
 }
 
 
@@ -262,6 +304,10 @@ svg:hover {
       display:none;
   } 
   
+.line {
+      display:none;
+  } 
+  
  #background {
       top:0;
       height:100%;
@@ -299,19 +345,13 @@ svg:hover {
       display:none;
   }
   
+ .line {
+      display:none;
+  }  
+  
  #background {
       top:0;
       height:100%;
   }  
   
 }
-
-/* pls dont */
-.credit {
-    padding-top:4px;
-    bottom:1%;
-    right:1.5%;
-    position:fixed;
-    z-index:111;
-    font-style: normal;
-}  
