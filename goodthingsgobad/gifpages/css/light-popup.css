@@ -1,0 +1,499 @@
+/* tumblr controls by cyantists */
+iframe.tmblr-iframe {
+    z-index:99999999999999!important;
+    top:0!important;
+    right:0!important;
+    opacity:0.8;
+        filter:invert(1) contrast(150%);
+        -webkit-filter:invert(1) contrast(150%);
+        -o-filter:invert(1) contrast(150%);
+        -moz-filter:invert(1) contrast(150%);
+        -ms-filter:invert(1) contrast(150%);
+    transform:scale(0.65);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.65);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.65);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.65);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.65);
+    -ms-transform-origin:100% 0;}
+
+iframe.tmblr-iframe:hover {
+    opacity:0.4!important;}
+
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+
+::-webkit-scrollbar-track {
+width: 2px;
+border: none;
+background-color:none;
+border:1px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--accent); 
+border:1px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--accent2);  
+}
+
+
+::selection {
+  color: #fff;
+  background-color: var(--accent2);
+}  
+
+svg {
+  fill:var(--accent); 
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;    
+    transition: all .3s;
+}   
+
+svg:hover {
+  fill:var(--accent2);
+      -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;    
+    transition: all .3s;
+}
+
+/* tooltipsssss */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-family:'karla';
+  font-weight:700;
+  font-size:10px;
+  text-transform:uppercase;
+  color: var(--main-txt-color);
+  background-color:var(--second-txt-color);
+  text-align:center;
+  visibility: hidden;
+  height:10px;
+  border-radius: 30px;
+  top: -10px;
+  right: 350%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+  padding-bottom:10px;
+  border:1px solid var(--border-color);
+}
+
+.tooltiptext {
+  width: max-content; 
+  max-width: 200px;
+  position: absolute;
+  z-index: 9999;
+  padding: 10px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* credit tooltip*/
+.tooltipcred .tooltiptextcred {
+  font-family:'karla';
+  font-size:12px;
+  color:var(--second-txt-color);
+  text-align:center;
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--accent);
+  border-radius: 6px;
+  padding: 5px 0;
+  width: 160px;
+  top: 0px;
+  right: 145%;
+  opacity: 0;
+  transition: opacity 1s;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipcred:hover .tooltiptextcred {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltipcred .tooltiptextcred::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--accent);
+}
+
+/* pop up tooltip */
+
+
+.tooltippop .tooltiptextpop {
+  font-family:'karla';
+  font-weight:700;
+  font-size:10px;
+  text-transform:uppercase;
+  color: var(--main-txt-color);
+  background-color:var(--second-txt-color);
+  text-align:center;
+  visibility: hidden;
+  height:10px;
+  border-radius: 30px;
+  top: 30px;
+  right: -120px;
+  opacity: 0;
+  transition: opacity 1s;
+  padding-bottom:10px;
+  border:1px solid var(--border-color);
+}
+
+.tooltiptextpop {
+  width: max-content; 
+  max-width: 200px;
+  position: absolute;
+  z-index: 9999;
+  padding: 10px;
+}
+
+.tooltippop:hover .tooltiptextpop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.line {
+    left:0;
+    top:92px;
+    position:fixed;
+    width:100%;
+    height:8px;
+    padding:none;
+    border-bottom:1px solid var(--border-color);
+    border-top:1px solid var(--border-color);
+    background: -webkit-linear-gradient(160deg, var(--gradient-colors));
+    background: -o-linear-gradient(160deg, var(--gradient-colors));
+    background: -moz-linear-gradient(160deg, var(--gradient-colors));
+    background: linear-gradient(160deg, var(--gradient-colors));
+    z-index:99999;
+}
+
+
+/* container */
+#trunk {
+    width:calc(100% - 200px);
+    height:calc(100% - 120px);
+    margin:0 auto;
+    left:0;
+    right:0;
+    bottom:0;
+    top:101px;
+    text-align;center;
+    display:inline-block;
+    position:fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius:0px;
+    padding-top:0px;
+    padding-bottom:40px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+#trunk img {
+    padding-right:4px;
+    padding-bottom:1px;
+    
+}
+
+/* tw */
+
+.twb {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    
+}
+
+.twb::before {
+    content: attr(alt); 
+    width:var(--gif-width);
+    height:var(--gif-height);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    color:var(--main-txt-color);
+    font-family:'karla';
+    font-size:13px;
+        backdrop-filter: blur(10px);
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.7s ease, transform 0.3s ease; /* hide faster than reveal */
+}
+.twb:hover::before {
+    opacity: 0;
+        backdrop-filter: blur(10px);
+    transition: opacity 1.0s ease, transform 0.5s ease; /* slower reveal */
+}
+
+.tws {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    
+}
+
+.tws::before {
+    content: attr(alt); 
+    width:var(--gif-width);
+    height:var(--gif-height);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    color:var(--second-txt-color);
+    font-family:'karla';
+    font-size:13px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    text-align: center;
+    opacity: 1;
+    background-color:var(--accent);
+    transition: opacity 0.7s ease, transform 0.3s ease; /* hide faster than reveal */
+}
+.tws:hover::before {
+    opacity: 0;
+    transition: opacity 1.0s ease, transform 0.5s ease; /* slower reveal */
+}
+
+/* icon tws */
+  
+.twb-icon {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    
+}
+
+.twb-icon::before {
+    content: attr(alt); 
+    width:calc(var(--icon-width) - 20px );
+    height:calc(var(--icon-height) - 20px );
+    position: absolute;
+    padding:10px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    color:var(--main-txt-color);
+    font-family:'karla';
+    font-size:11px;
+        backdrop-filter: blur(10px);
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.7s ease, transform 0.3s ease; /* hide faster than reveal */
+}
+.twb-icon:hover::before {
+    opacity: 0;
+        backdrop-filter: blur(10px);
+    transition: opacity 1.0s ease, transform 0.5s ease; /* slower reveal */
+}
+
+.tws-icon {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    
+}
+
+.tws-icon::before {
+    content: attr(alt); 
+    width:calc(var(--icon-width) - 20px );
+    height:calc(var(--icon-height) - 20px );
+    position: absolute;
+    padding:10px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    color:var(--second-txt-color);
+    font-family:'karla';
+    font-size:11px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    text-align: center;
+    opacity: 1;
+    background-color:var(--accent);
+    transition: opacity 0.7s ease, transform 0.3s ease; /* hide faster than reveal */
+}
+.tws-icon:hover::before {
+    opacity: 0;
+    transition: opacity 1.0s ease, transform 0.5s ease; /* slower reveal */
+}  
+
+/* pop up */
+
+.poppy-cont {
+    width:40px;
+    height:40px;
+    float:left;
+    display:inline-block;
+    margin-top:-72px;
+    margin-left:632px;
+    z-index:1;
+}
+
+.poppy {
+    width:40px;
+    height:40px;
+    background-color:var(--accent);
+    border-radius:60px;
+}
+
+.poppy a {
+    color:#fff;
+    font-size:30px;
+    padding:0px 0px 12px 12px;
+    text-align:center;
+    top:-44px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba(250,250,250,0.6);
+        backdrop-filter: blur(10px);
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999999;  
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+    background: var(--header-color);
+    width:500px;
+    border: 1px solid var(--border-color);
+    z-index: 99999;    
+    margin: 20% auto;
+    padding: none;
+    position: relative;
+    transition: all 3s ease-in-out;
+}
+
+.popup:after {
+    height: 8px;
+    display: block;
+    width: 100%;
+    padding:none;
+    border:1px solid var(--border-color);
+    content: '';
+    border-bottom:none;
+    background: -webkit-linear-gradient(160deg, var(--gradient-colors));
+    background: -o-linear-gradient(160deg, var(--gradient-colors));
+    background: -moz-linear-gradient(160deg, var(--gradient-colors));
+    background: linear-gradient(160deg, var(--gradient-colors));
+    margin-left:-1px;
+    margin-top:5px;
+    }
+
+.popup h1 {
+    margin-top:20px;
+    color:var(--accent);
+    font-family: 'roc-grotesk', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:22px;
+    line-height:26px;
+    letter-spacing:1px;
+    z-index:1;
+    text-align:center;
+    
+}
+
+.popup p {
+    height:20px;
+    color:var(--main-txt-color);
+    font-family: 'karla', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:13px;
+    line-height: 1.5em;
+    text-align:center;
+    padding:0px 20px 30px 20px;
+}
+
+.popup b {
+    height:20px;
+    color:var(--accent);
+    font-weight:800;
+    font-size:15px;
+    line-height: 1.4em;
+    vertical-align: top;
+}
+
+.popup .close {
+  position: absolute;
+  top: -6px;
+  right: 6px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--main-txt-color);
+}
+.popup .close:hover {
+  color: var(--accent);
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+/* pls dont */
+.credit {
+    padding-top:4px;
+    bottom:1%;
+    right:1.5%;
+    position:fixed;
+    z-index:111;
+    font-style: normal;
+}  
