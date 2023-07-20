@@ -244,7 +244,7 @@ svg:hover {
     top: 0px;
     right: 0px;
     bottom: 0px;
-    color:var(--main-txt-color);
+    color:var(--second-txt-color);
     font-family:'karla';
     font-size:13px;
         backdrop-filter: blur(10px);
@@ -312,7 +312,7 @@ svg:hover {
     top: 0px;
     right: 0px;
     bottom: 0px;
-    color:var(--main-txt-color);
+    color:var(--second-txt-color);
     font-family:'karla';
     font-size:11px;
         backdrop-filter: blur(10px);
