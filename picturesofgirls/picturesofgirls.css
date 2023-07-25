@@ -260,7 +260,7 @@ background: var(--main-txt-color);
     position:fixed;
     border:1px solid var(--second-txt-color);
     overflow-y:scroll;
-    overflow-x:hidden;
+    overflow-x:none;
     z-index:1111;
 }
 
