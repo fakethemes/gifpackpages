@@ -481,7 +481,8 @@ background: var(--second-txt-color);
     font-size: 11px;
     font-weight:bold;
     text-align: center;
-    text-transform: uppercase
+    text-transform: uppercase;
+    padding-top:40px;
 }
 
 /* pop up title */
