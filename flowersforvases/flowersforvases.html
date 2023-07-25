@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+
+            flowers for vases (gif pack page #4) by fakehelper
+ 
+                    credits
+                    - google fonts (lora)
+                    - cappuccicons icon font
+                    - tumblr controls by cyantists
+                    - text hover/tw tutorial by the-art-of-web.com
+                    
+                search ":root" to change theme colors!!  
+ 
+    
+    
+-->
+
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+
+<link href="https://static.tumblr.com/51fnf0s/BCoprzst5/style-my-tooltips.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/51fnf0s/lKGprzsse/jquery.style-my-tooltips.js"></script>
+<script>
+     (function($){
+         $(document).ready(function(){
+             $("[title]").style_my_tooltips({ 
+    tip_follows_cursor:true,
+    tip_delay_time:300,
+    tip_fade_speed:300,
+    attribute:"title"
+});
+         });
+     })(jQuery);
+ </script>
+
+
+<!--- fonts --->
+
+<script src="//pull.cappuccicons.com/cpf.js"></script>
+
+<link rel="stylesheet" href="https://use.typekit.net/ipc6xne.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<style type="text/css">
+
+                /* CHANGE THEME COLORS AND GIF SIZES HERE */
+
+:root {
+                        --main-txt-color: #222;
+                        --second-txt-color: #fef9f3; 
+                        --border-color: #222;
+                        --accent-color: #222;
+                        --tw-background-color: #222;
+                        
+                        
+                        /* CHANGE GIF SIZES HERE */
+                        
+                        --gif-width: 245px;
+                        --gif-height: 160px;
+                        --gif-icon-width: 100px;
+                        --gif-icon-height: 100px;
+                        
+                       /* if using gradient bg, change colors here */
+                 
+                        --gradient-colors: #ffefd7, #f3d8d2, #a6d6e4;
+                       
+                       
+                       /* if using solid bg, change color here */    
+                        --solid-bg-color: #111;
+                        
+                        
+}
+
+/* tumblr controls by cyantists */
+iframe.tmblr-iframe {
+    z-index:99999999999999!important;
+    top:0!important;
+    right:0!important;
+    opacity:0.4;
+    /* delete invert(1) from here */
+        filter:invert(1) contrast(150%);
+        -webkit-filter:invert(1) contrast(150%);
+        -o-filter:invert(1) contrast(150%);
+        -moz-filter:invert(1) contrast(150%);
+        -ms-filter:invert(1) contrast(150%);
+    /* to here if your blog has a dark background */
+    transform:scale(0.65);
+    transform-origin:100% 0;
+    -webkit-transform:scale(0.65);
+    -webkit-transform-origin:100% 0;
+    -o-transform:scale(0.65);
+    -o-transform-origin:100% 0;
+    -moz-transform:scale(0.65);
+    -moz-transform-origin:100% 0;
+    -ms-transform:scale(0.65);
+    -ms-transform-origin:100% 0;}
+
+iframe.tmblr-iframe:hover {
+    opacity:0.6!important;}
+
+#s-m-t-tooltip{
+  /* basic */
+  max-width:300px;
+  z-index:10;
+  padding:8px 15px 8px 15px;
+  background:var(--second-txt-color);
+  font-family:'lora';
+  font-size:11px;
+  color:var(--main-txt-color);
+  border:solid 1px var(--border-color);
+  border-radius:50%;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 5px;
+height: 5px;
+border-radius: 100px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 100px;
+width: 2px;
+border: none;
+background-color:none;
+border: 1px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+background-color: var(--accent-color); 
+border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--border-color);  
+}
+
+
+body {
+    color:var(--main-txt-color);
+    overflow:hidden;
+    }
+    
+#background{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%; 
+    height:100%;
+    z-index:-9999;
+    
+    /* single color bg
+    background: var(--solid-bg-color);
+    
+    /* bg img */
+    background-image:url('https://static.tumblr.com/51fnf0s/8RXr15ac3/gradient-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* gradient bg - remove img url if using gradient 
+    background: -webkit-linear-gradient(var(--gradient-colors));
+    background: -o-linear-gradient(var(--gradient-colors));
+    background: -moz-linear-gradient(var(--gradient-colors));
+    background: linear-gradient(var(--gradient-colors));
+    */
+}    
+    
+a, b {
+    color:var(--accent-color);
+    font-family:'lora';
+    font-style:regular;
+    text-decoration:none;
+    font-weight:600;}
+    
+#treetop {
+    top:20px;
+    margin:auto;
+    width:1050px;
+    height:100px;
+    text-align;center;
+    position:relative;
+    z-index:1;
+    border:solid 1px var(--border-color);
+    padding:none;
+}
+
+
+#fruit {
+    padding:none;
+    text-align;center;
+    z-index:9999;
+    display:inline-block;
+    width:30%;
+    margin-left:1%;
+    
+    
+}
+
+#fruit h1 {
+    top:0;
+    color:var(--accent-color);
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-weight: bold;
+    font-size:30px;
+    line-height:26px;
+    letter-spacing:0px;
+    z-index:1;
+    
+}
+
+#fruit h2 {
+    height:20px;
+    color:var(--main-txt-color);
+    font-family:'lora';
+    font-style:400;
+    font-weight:500;
+    font-size:13px;
+    line-height:10px;
+    text-transform:uppercase;
+    margin-top:-10px;
+}
+
+#fruit h2:before {
+    content:'✦'; 
+    font-size:13px;
+    line-height:13px;
+    font-weight:normal;
+    padding-right:6px;
+    color:var(--accent-color);
+}
+
+#fruit h2:after {
+    content:'✦'; 
+    font-size:13px;
+    line-height:13px;
+    font-weight:normal;
+    padding-left:6px;
+    color:var(--accent-color);
+}
+
+/* links */    
+#leaves{
+    width:20%;
+    height:50px;
+    display:inline-block;
+    padding-bottom:10px;
+    top:-10px;
+    text-align:center;
+    position:relative;
+    border-right:solid 1px var(--border-color);
+    border-left:solid 1px var(--border-color);
+    
+}
+
+
+#leaves a:hover {
+    color:var(--second-txt-color);
+    background:var(--main-txt-color);
+    -webkit-transition: color 1s ease-out;
+    -moz-transition: color 1s ease-out;
+    -o-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+}
+
+#leaves a {
+    margin-top:16px;
+    color:var(--accent-color);
+    font-family:'cappuccicons'; 
+    font-size:15px;
+    padding-top:5px;
+    margin-left:1px;
+    width:26px;
+    height:20px;
+    background-color:none;
+    border-radius:100%;
+    text-align:center;
+    z-index:2;
+    display:inline-block;
+    border:solid 1px var(--border-color);
+    -webkit-transition: color 1s ease-out;
+    -moz-transition: color 1s ease-out;
+    -o-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+}
+
+#about {
+    width:47%;
+    height:100px;
+    display:inline-block;
+    position:relative;
+    text-align:center;
+}
+
+#about p{
+    font-family:'lora';
+    font-size:12px;
+    color:var(--main-txt-color);
+    text-align:center;
+}
+
+
+/* container */
+#trunk {
+    width:98%;
+    height:77%;
+    top:140px;
+    right:1.5%;
+    padding:0px, 0px, 10px, 0px;
+    text-align;center;
+    display:inline-block;
+    position:fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#trunk img {
+    padding:2px;
+    border-radius:2px;
+    border: solid 1px var(--border-color);
+    margin-right:2px;
+    margin-top:-1px;
+}
+
+/* tw */
+
+.twb {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    
+}
+
+.twb img {
+    padding-right:4px;
+}
+
+.twb::before {
+    content: attr(alt); 
+    width:var(--gif-width);
+    height:var(--gif-height);
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 1px;
+    color:var(--second-txt-color);
+    font-family:'lora';
+    font-size:13px;
+    backdrop-filter: blur(10px);
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.7s ease, transform 0.3s ease;
+}
+.twb:hover::before {
+    opacity: 0;
+    backdrop-filter: blur(10px);
+    transition: opacity 1.0s ease, transform 0.5s ease;
+}
+
+.tws {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    
+}
+
+.tws img {
+    padding-right:4px;
+}
+
+.tws::before {
+    content: attr(alt); 
+    width:var(--gif-width);
+    height:var(--gif-height);
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 1px;
+    color:var(--second-txt-color);
+    font-family:'lora';
+    font-size:13px;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    opacity: 1;
+    background-color:var(--tw-background-color);
+    transition: opacity 0.7s ease, transform 0.3s ease;
+}
+.tws:hover::before {
+    opacity: 0;
+    transition: opacity 1.0s ease, transform 0.5s ease;
+}
+
+
+/* icon tws */
+  
+.twb-icon {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    
+}
+
+.twb-icon img {
+    padding-right:4px;
+}
+
+.twb-icon::before {
+    content: attr(alt); 
+    width:var(--gif-icon-width);
+    height:var(--gif-icon-height);
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 1px;
+    color:var(--second-txt-color);
+    font-family:'lora';
+    font-size:11px;
+    backdrop-filter: blur(10px);
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.7s ease, transform 0.3s ease;
+}
+.twb-icon:hover::before {
+    opacity: 0;
+    backdrop-filter: blur(10px);
+    transition: opacity 1.0s ease, transform 0.5s ease;
+}
+
+.tws-icon {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    
+}
+
+.tws-icon img {
+    padding-right:4px;
+}
+
+.tws-icon::before {
+    content: attr(alt); 
+    width:var(--gif-icon-width);
+    height:var(--gif-icon-height);
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 1px;
+    color:var(--second-txt-color);
+    font-family:'lora';
+    font-size:11px;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    opacity: 1;
+    background-color: var(--tw-background-color);
+    transition: opacity 0.7s ease, transform 0.3s ease; 
+}
+.tws-icon:hover::before {
+    opacity: 0;
+    transition: opacity 1.0s ease, transform 0.5s ease;
+}  
+
+
+/* episode titles */
+.branch {
+    width:350px;
+    height:38px;
+    background: none;
+    margin-bottom:30px;
+    margin-top:25px;
+    border:solid 1px var(--border-color);
+    border-radius:50%;
+    
+}
+
+.branch h3:before {
+    content:'✦'; 
+    font-size:13px;
+    line-height:13px;
+    font-weight:normal;
+    padding-right:6px;
+    color:var(--accent-color);
+}
+
+.branch h3:after {
+    content:'✦'; 
+    font-size:13px;
+    line-height:13px;
+    font-weight:normal;
+    padding-left:6px;
+    color:var(--accent-color);
+}
+
+.branch h3{
+    color:var(--main-txt-color);
+    margin-top:9px;
+    font-family:'lora';
+    font-size:13px;
+    line-height:20px;
+    font-weight:bold;
+    
+}
+
+#seed { 
+    top:60px;
+    right:-16px;
+    width:30px; 
+    height:auto;
+    background:none;
+    position: absolute;
+}
+
+#seed2 { 
+    top:2px;
+    left:-22px;
+    width:43px; 
+    height:auto;
+    background:none;
+    position: absolute;
+}
+
+svg {
+  fill:var(--accent-color); 
+}
+
+
+/* dont u do it */
+.credit {
+    font-size:16px;
+    bottom:1%;
+    right:1%;
+    position:fixed;
+    z-index:111;
+}   
+
+.credit a {
+    color:var(--second-txt-color);
+} 
+
+.credit a:hover {
+    color:#222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;    
+    transition: all .3s;
+}
+    
+</style>
+</head>
+<body>
+
+
+<div id="background"></div>
+</div>
+<div id="treetop">
+<div id="seed">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve"> <path class="star" d="M77.5,40c0,0-16.23-2.66-25.54-11.96C42.66,18.73,40,2.5,40,2.5s-2.66,16.23-11.96,25.54 C18.73,37.34,2.5,40,2.5,40s16.23,2.66,25.54,11.96C37.34,61.27,40,77.5,40,77.5s2.66-16.23,11.96-25.54 C61.27,42.66,77.5,40,77.5,40z"/></svg></div>
+<div id="seed2">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve"> <path class="star2" d="M77.5,40c0,0-16.23-2.66-25.54-11.96C42.66,18.73,40,2.5,40,2.5s-2.66,16.23-11.96,25.54 C18.73,37.34,2.5,40,2.5,40s16.23,2.66,25.54,11.96C37.34,61.27,40,77.5,40,77.5s2.66-16.23,11.96-25.54 C61.27,42.66,77.5,40,77.5,40z"/></svg></div>
+
+
+<div id="fruit">
+<center><h1>Character Name</h1>
+<h2>Footage (YEAR)</h2>
+</center>
+</div>
+
+<div id="leaves"><center>
+
+                             <!--CHANGE LINKS HERE 
+                CHANGE ICONS USING https://cappuccicons.com/-->
+
+<!--link back to home--><a class="cp cp-home" title="back to {Name}" href="https://yoururl.tumblr.com/"></a>&nbsp
+<!--link two--><a class="cp cp-tags" title="link 2 title" href="#"></a>&nbsp
+<!--link three--><a class="cp cp-heart" title="link 3 title" href="#"></a>&nbsp
+<!--link four--><a class="cp cp-moon" title="link 4 title" href="#">&nbsp</a>
+
+</center></div>
+
+
+<div id="about">
+
+                            <!--CHANGE INFO HERE-->
+                        
+<p>This page contains <b>#0</b> gifs of the actor <b>Actor Name</b> in <b><i>Footage</i></b>.
+<br>
+Do not repost, remove my watermark, claim as your own, edit in any way, or include in gif hunts. Please like or reblog the original post if using any gifs.  
+</div>
+
+
+</div>
+
+<!--                !! for gifs that need trigger warnings !!
+   
+                            blurred trigger warning
+    <a class="twb" alt="tw: trigger warning"><img src="(img link)"></a>
+    
+                       solid background trigger warning
+    <a class="tws" alt="tw: trigger warning"><img src="(img link)"></a>  
+    
+    
+                              for icon sized gifs
+       use the class "twb-icon" if you'd like blurred trigger warnings
+          use the class "tws-icon" if you'd like a solid background
+
+
+             
+               use for trigger warning gifs that include a link
+
+  <a class="twb" alt="tw: trigger warning" target="blank" href="#">(img)</a>
+
+
+-->
+
+
+
+<div id="trunk"><center>
+<div class="branch"><h3>Footage (Year) : #000 gifs</h3></div>
+
+<p>
+
+<img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><a class="twb-icon" alt="tw: trigger warning" target="blank" href="#"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"></a><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><a class="twb-icon" alt="tw: trigger warning" target="blank" href="#"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"></a><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><a class="tws-icon" alt="tw: trigger warning" target="blank" href=""><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"></a><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image"><img src="https://via.placeholder.com/100x100/fef9f3/222222?text=100+x+100" alt="image">
+    
+    
+</p>
+
+
+
+<div class="branch"><h3>Footage (Year) : #000 gifs</h3></div>
+
+<p><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160"><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160"><a class="tws" alt="tw: trigger warning" target="blank" href="#"><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160"></a><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160"><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160"><a class="twb" alt="tw: trigger warning" target="blank" href="#"><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160"></a><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160"><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160" alt="image"><a class="twb" alt="tw: trigger warning" target="blank" href=""><img src="https://via.placeholder.com/245x160/222222/fef9f3?text=245+x+160"></a><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160" alt="image"><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160" alt="image"><a class="tws" alt="tw: trigger warning" target="blank" href=""><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160"></a><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160" alt="image"><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160" alt="image"><img src="https://via.placeholder.com/245x160/fef9f3/222222?text=245+x+160" alt="image">
+    
+</p>
+
+
+
+</center>
+</div>
+
+
+<div class="credit"><a class="ph-fill ph-sparkle" title="gif pack page by fakehelper" href="https://fakehelper.tumblr.com/"></a></div><!--don't touch this pls it took me forever like plS donut do it-->
+</div>
+</body>
+</html>
