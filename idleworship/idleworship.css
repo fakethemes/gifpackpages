@@ -136,7 +136,7 @@ background: var(--second-txt-color);
     width:100%;
     height:auto;
     display:inline-block;
-    text-align;center;
+    text-align:center;
     position:relative;
     z-index:1;
 }
