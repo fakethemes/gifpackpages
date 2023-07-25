@@ -37,21 +37,24 @@ iframe.tmblr-iframe:hover {
 ::-webkit-scrollbar {
 width: 5px;
 height: 5px;
+border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
 border-radius: 5px;
 width: 2px;
-border: 1px dotted var(--border-color);
+border: none;
+background-color:none;
+border: 1px dotted var(--second-txt-color);
 }
 
 ::-webkit-scrollbar-thumb {
-background: var(--border-color); 
-border-radius: 10px;
+background-color: var(--second-txt-color); 
+border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: var(--main-txt-color);  
+background: var(--accent);  
 }
 
 ::selection {
