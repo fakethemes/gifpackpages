@@ -208,7 +208,7 @@ svg:hover {
     right:0;
     bottom:0;
     top:101px;
-    text-align;center;
+    text-align:center;
     display:inline-block;
     position:fixed;
     overflow-y: scroll;
